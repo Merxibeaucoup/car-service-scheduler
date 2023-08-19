@@ -5,10 +5,12 @@ import java.util.Set;
 
 import com.edgar.bmwservice.security.user.User;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,6 +24,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Table(name = "user_garage")
 public class Garage extends BaseEntity {
 
 
@@ -37,7 +40,8 @@ public class Garage extends BaseEntity {
 
 	@NotNull
 	private String vinNumber;
-
+	
+	@Nullable
 	private String lastReportedMileage;
 
 	@OneToMany

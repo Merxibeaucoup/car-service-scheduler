@@ -1,6 +1,7 @@
 package com.edgar.bmwservice.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,6 +15,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Table(name="bmw_cars")
 public class Cars extends BaseEntity {
 	
 	

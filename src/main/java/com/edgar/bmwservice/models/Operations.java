@@ -2,6 +2,7 @@ package com.edgar.bmwservice.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Table(name="operations_performed")
 public class Operations extends BaseEntity {
 
 	@Column(columnDefinition = "TEXT")
