@@ -51,7 +51,7 @@ public class Garage extends BaseEntity {
 	private Set<ServicesProvided> recommendedServices;
 
 	@ManyToOne
-	@JoinColumn(name = "user_id")
+	@JoinColumn(name = "owner_id")
 	private User owner;
 
 }
