@@ -52,6 +52,6 @@ public class Garage extends BaseEntity {
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	private User user;
+	private User owner;
 
 }

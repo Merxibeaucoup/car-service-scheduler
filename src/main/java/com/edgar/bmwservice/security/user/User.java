@@ -51,7 +51,7 @@ public class User implements UserDetails {
 	@JsonIgnore
 	private List<Token> tokens;
 
-	@OneToMany(mappedBy = "user")
+	@OneToMany(mappedBy = "owner")
 	private Set<Garage> garageCars;
 	
 	private String phoneNumber;
